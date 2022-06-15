@@ -14,7 +14,8 @@
 
                 <!-- Content -->
                 <h5 class="text-white text-uppercase">Footer Content</h5>
-                <p class="text-white">Here you can use rows and columns to organize your footer content.</p>
+                <p class="text-white">Bienvenue sur ma boutique en ligne.</p>
+                <p class="text-white">Cette Boutique est un site purement pédagogique et non un site e-commerce fonctionnel.</p>
 
             </div>
             <!-- Grid column -->

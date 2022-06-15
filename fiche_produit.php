@@ -23,19 +23,19 @@ require_once("inc/init.php");
 
 ?>
     <div class='card col-md-4' style='width: 18rem;'>
-        <img class='card-img-top' src='<?= $produit["photo"]?>' alt='<?= $produit["titre"]?>'>
+        <img class='card-img-top' src='<?php echo $produit["photo"]?>' alt='<?php echo $produit["titre"]?>'>
         <div class='card-body'>
-            <h5 class='card-title text-center'><?= $produit["titre"]?></h5>
-            <p class='card-text text-center'><?= $produit["description"]?></p>
+            <h5 class='card-title text-center'><?php echo $produit["titre"]?></h5>
+            <p class='card-text text-center'><?php echo $produit["description"]?></p>
         </div>
     </div>
 
     <div class="col-md-4">
         <ul class="list-group">
-            <li class="list-group-item">Catégorie :<?= $produit["categorie"]?> </li>
-            <li class="list-group-item">Couleur : <?= $produit["couleur"]?> </li>
-            <li class="list-group-item">Taille : <?= $produit["taille"]?> </li>
-            <li class="list-group-item">Prix : <?= $produit["prix"]?> </li>
+            <li class="list-group-item">Catégorie :<?php echo $produit["categorie"]?> </li>
+            <li class="list-group-item">Couleur : <?php echo $produit["couleur"]?> </li>
+            <li class="list-group-item">Taille : <?php echo $produit["taille"]?> </li>
+            <li class="list-group-item">Prix : <?php echo $produit["prix"]?> </li>
 
             <!-- CRÉATION D'UN FORMULAIRE POUR RÉCUPÉRER LE PRODUIT SELECTIONNÉ ET LA QUANTITÉ POUR L'AJOUTER AU PANIER -->
 
@@ -43,13 +43,13 @@ require_once("inc/init.php");
 
                 <li class="list-group-item">
                     <p> <span class="title"> Quantité : </span> </p>
-                    <input type="hidden" name="id_produit" value="<?= $produit["id_produit"]?>">
-                    <input type="hidden" name="categorie" value="<?= $produit["categorie"]?>">
+                    <input type="hidden" name="id_produit" value="<?php echo $produit["id_produit"]?>">
+                    <input type="hidden" name="categorie" value="<?php echo $produit["categorie"]?>">
                     <select class="custom-select" name="quantite" id="selectQuantity">
                         <!-- Je créé dynamiquement la quantité sélectionnable dans la limite du stock -->
                         <option disabled selected> Choisir une quantité </option>
                         <?php for($i = 1; $i <= $produit["stock"]; $i++) { ?>
-                            <option value="<?= $i ?>"> <?= $i ?> </option>
+                            <option value="<?php echo $i ?>"> <?php echo $i ?> </option>
                         <?php }
                          ?>
                     </select>

@@ -7,7 +7,7 @@ require_once("inc/init.php");
 
 
     if(isset($_GET["action"]) && $_GET["action"] == "suppressionArticle") {
-        $content .= "<div class='col-md-12 mb-5'> <span class='badge badge-dark'>
+        $content .= "<div class='col-md-12 mb-5'> <span class='badge badge-success'>
         Votre article a bien été retiré du panier !</span> </div>";
         retirerProduitDuPanier($_GET["id_produit"]);
         mettreAJourIndiceIndexProduitPanier();
