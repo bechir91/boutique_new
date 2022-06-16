@@ -12,11 +12,11 @@ $content = "";
 session_start();
 
 // définition de constantes
-define("RACINE_SITE", $_SERVER["DOCUMENT_ROOT"] . "/wf3_26102020/09_BOUTIQUE/");
-define("URL", "http://" .$_SERVER["HTTP_HOST"] . "/wf3_26102020/09_BOUTIQUE/");
+define("RACINE_SITE", $_SERVER["DOCUMENT_ROOT"] . " /boutique_new/");
+define("URL", "http://" .$_SERVER["HTTP_HOST"] . " /boutique_new/");
 
-// echo 'Le dossier vers notre site est :' . RACINE_SITE . '<br>';
-// echo 'L URL vers notre site est :' . URL;
+// echo ' Le dossier vers notre site est : ' . RACINE_SITE . '<br>';
+// echo  'L \' URL vers notre site est : ' . URL;
 
 require_once("fonction.php");
 
