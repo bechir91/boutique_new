@@ -30,7 +30,7 @@ require_once("inc/init.php");
         </div>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-4 mx-auto">
         <ul class="list-group">
             <li class="list-group-item">Catégorie :<?php echo $produit["categorie"]?> </li>
             <li class="list-group-item">Couleur : <?php echo $produit["couleur"]?> </li>
@@ -55,7 +55,7 @@ require_once("inc/init.php");
                     </select>
                 </li>
      
-                <input class="btn btn-outline-secondary mt-5" disabled type="submit" value="Ajouter au Panier" name="ajout_panier" style="width:100%" id="addCart">
+                <input class="btn btn-outline-secondary mt-5"  type="submit" value="Ajouter au Panier" name="ajout_panier" style="width:100%" id="addCart">
 
             </form>
          

@@ -42,29 +42,29 @@
     require_once("inc/header.php");
 ?>
 
-<h1 class="text-center">Laissez-nous vos coordonnées et notre équipe reprendra contact avec vous.</h1>
+<h1 class="text-center ">Laissez-nous vos coordonnées et notre équipe reprendra contact avec vous.</h1>
 
 
 <?php if(isset($count) && $count > 0) { ?>
     <?php echo $content; ?>
 <?php } else { ?>
-    <form class="row col-md-10" method="post">
+    <form class="row col-md-10 mt-4" method="post">
         <div class="form-group col-md-6">
             <input type="hidden" name="id_membre" value="<?php echo $id_membre; ?>">
             <label for="prenom">Prénom :</label>
-            <input type="text" name="first_name" class="form-control" id="prenom" aria-describedby="prenom" placeholder="Enter your first name">
+            <input type="text" name="first_name" class="form-control" id="prenom" aria-describedby="prenom" placeholder="Entrer votre prénom">
         </div>
         <div class="form-group col-md-6">
             <label label for="name">Nom :</label>
-            <input type="text" name="last_name" class="form-control" id="name" placeholder="Enter your name">
+            <input type="text" name="last_name" class="form-control" id="name" placeholder="Enter votre nom">
         </div>
         <div class="form-group col-md-6">
             <label label for="name">Email :</label>
-            <input type="email" name="email" class="form-control" id="email" placeholder="Enter your email">
+            <input type="email" name="email" class="form-control" id="email" placeholder="Enter votre mail">
         </div>
         <div class="form-group col-md-6">
             <label label for="name">Telephone :</label>
-            <input type="telephone" name="telephone" class="form-control" id="telephone" placeholder="Enter your telephone">
+            <input type="telephone" name="telephone" class="form-control" id="telephone" placeholder="Enter votre téléphone">
         </div>
         <div class="form-group col-md-12">
             <label for="exampleFormControlSelect1">En quoi pouvons-nous vous aider?</label>
@@ -76,11 +76,11 @@
             </select>
         </div>
         <div class="form-group col-md-12">
-            <label for="message">Example textarea</label>
+            <label for="message">Votre message</label>
             <textarea class="form-control" id="message" name="message" rows="3"></textarea>
         </div>
-        <div class="form-group col-md-12">
-            <button type="submit" class="btn btn-primary">Envoyer son message</button>
+        <div class="form-group col-md-12 text-center mt-5">
+            <button type="submit" class="btn btn-secondary">Envoyer votre message</button>
         </div>
     </form>
 <?php } ?>

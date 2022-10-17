@@ -94,13 +94,15 @@ require_once("inc/header.php");
     <form method="post" action="">
     <div class="form-group">
         <label for="pseudo">Pseudo :</label>
-        <input type="text" name="pseudo" class="form-control" id="pseudo" aria-describedby="pseudo" placeholder="Enter your pseudo">
+        <input type="text" name="pseudo" class="form-control" id="pseudo" aria-describedby="pseudo" placeholder="Pseudo">
     </div>
     <div class="form-group">
-        <label for="exampleInputPassword1">Password :</label>
-        <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        <label for="exampleInputPassword1">Mot de passe :</label>
+        <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Mot de passe">
     </div>
-    <button type="submit" class="btn btn-dark">Get connected</button>
+    <div class="text-center">
+        <button type="submit" class="btn btn-dark mt-3">Connexion</button>
+    </div>
     </form>
 </div>
 

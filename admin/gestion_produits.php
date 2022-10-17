@@ -28,7 +28,7 @@ require_once("../inc/init.php");
     ////////////////////////////////////////////
     //////////// Suppression d'un produit ////////////////
     ////////////////////////////////////////////
-    $elementsPourLaPagination = pagination($pdo, 3, "SELECT COUNT(*) FROM produit");
+    $elementsPourLaPagination = pagination($pdo, 5, "SELECT COUNT(*) FROM produit");
     
     // echo '<pre>';
     // var_dump($elementsPourLaPagination);

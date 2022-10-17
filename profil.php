@@ -21,7 +21,7 @@ $stmt = $pdo->query('SELECT * FROM commande WHERE id_membre ="' . $_SESSION["mem
 require_once("inc/header.php");
 ?>  
     <div class="col-md-12">
-        <!-- Message de bienvenu -->
+        <!-- Message de bienvenue -->
         <?php if($_SESSION["membre"]["civilite"] == "m") { ?>
             <h2 class="text-center mb-5">Bonjour Mr <?= $_SESSION["membre"]["prenom"] . " " . $_SESSION["membre"]["nom"] ?>, bienvenue sur votre espace personnel !</h2>
         <?php } else { ?>
@@ -29,7 +29,7 @@ require_once("inc/header.php");
         <?php } ?>
     </div>
 
-    <div class="card col-md-4" style="width:18rem">
+    <div class="card col-md-4 mx-auto" style="width:18rem">
 
         <!-- Avatar -->
         <?php if($_SESSION["membre"]["civilite"] == "m") { ?>
@@ -38,7 +38,7 @@ require_once("inc/header.php");
             <img src="photo/avatar_female.png" alt="avatar female" class="card-img-top">
         <?php } ?>
 
-        <div class="card-body">
+        <div class="card-body mx-auto mb-6">
             <h5 class="card-title text-center"> <?= $_SESSION["membre"]["prenom"] . " " . $_SESSION["membre"]["nom"] ?> </h5>
         </div>
 
@@ -50,7 +50,7 @@ require_once("inc/header.php");
 
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-4 mx-auto mt-5">
         <ul class="list-group list-group-flush">
             <li class="list-group-item text-center"> <h5> Mes commandes en cours </h5> </li>
 
@@ -64,13 +64,6 @@ require_once("inc/header.php");
 
         </ul>
 
-        <ul class="mt-5 list-group list-group-flush">
-            <li class="list-group-item text-center"> <h5> Mon historique de commande </h5> </li>
-            <li class="list-group-item text-center">
-                <p> Commande n° 1 du 22/01/2020 </p>
-                <p class="badge badge-primary"> En cours de traitement </p>
-            </li>
-        </ul>
     </div>
 
 
