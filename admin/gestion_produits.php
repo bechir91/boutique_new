@@ -250,7 +250,7 @@ require_once("inc/header.php");
 </div>
 <!-- Formulaire de modification/ajout de produit -->
 
-<p id="ajout_modif">Ajouter ou Modifier des produits :</p>
+<p id="ajout_modif">Ajouter/Modifier des produits :</p>
 
 <form action="" method="POST" enctype="multipart/form-data">
     <input type="hidden" name="id_produit" value="<?php echo $idProduit; ?>">
